@@ -1,6 +1,6 @@
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mycv}[2016/10/23 My custom CV class]
+\ProvidesClass{mycv}[2021/05/20 My custom CV class]
 \RequirePackage{titlesec}
 \RequirePackage[hidelinks,unicode]{hyperref}
 \RequirePackage[T1]{fontenc}
@@ -113,3 +113,18 @@
 	\github{#6}\\[0.5cm]
 }
 
+% XeLaTeX packages.
+\RequirePackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\RequirePackage{xunicode}
+\RequirePackage{xltxtra}
+
+% Font: Use "Tinos" as the main typeface (\textnormal{}, \normalfont).
+% The "Tinos" fonts are released under the Apache License Version 2.0,
+% and can be downloaded for free at <http://www.fontsquirrel.com/fonts/tinos>.
+% Symbol table: <http://www.fileformat.info/info/unicode/font/tinos/grid.htm>
+\setmainfont
+[ItalicFont=Tinos-Italic,
+BoldFont=Tinos-Bold,
+BoldItalicFont=Tinos-BoldItalic]
+{Tinos-Regular.ttf}

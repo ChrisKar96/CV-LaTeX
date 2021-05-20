@@ -1,0 +1,21 @@
+ #!/usr/bin/env bash
+
+# change into the desired folder
+cd $1
+
+# remove pdf if present
+[ -f $2.pdf ] && rm $2.pdf || echo "continue without remove"
+
+# test if pdf is removed, fail if still present
+[ -f $2.pdf ] && exit 1 || echo "continue building pdf output"
+
+xelatex $2.tex
+
+# exit if unoptimized pdf is not present
+[ -f $2.pdf ] || exit 1
+
+# optimize pdf and final output
+gs -sDEVICE=pdfwrite -dSAFER -dPDFSETTINGS=/ebook -dColorImageResolution=260 -dPrinted=false -dNOPAUSE -dBATCH -dFastWebView=true -sOutputFile=$2-$1.pdf $2.pdf
+
+# exit successfully if optimized pdf is present or with error if not present
+[ -f $2-$1.pdf ] && exit 0 || exit 1

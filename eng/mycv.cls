@@ -1,1 +1,0 @@
-../assets/mycv.cls
