@@ -1,24 +1,26 @@
----
-sudo: require
-dist: xenial
-language: bash
+os: linux
+dist: focal
+language: shell
+
+git:
+  depth: false
 
 before_install:
   - sudo apt-get -qq update
-  - sudo mkdir /home/travis/texmf
-  - cp assets/mycv.cls /home/travis/texmf
-  - sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-xetex texlive-lang-greek ghostscript
+  - cp assets/mycv.cls gr
+  - cp assets/mycv.cls eng
+  - sudo apt-get install --no-install-recommends -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-fonts-extra-links texlive-font-utils texlive-plain-generic texlive-xetex texlive-lang-greek lmodern ghostscript
 
 script:
-  - bash publish.sh ./gr/ cv
-  - bash publish.sh ./eng/ cv
+  - bash publish.sh gr cv
+  - bash publish.sh eng cv
 
 deploy:
   provider: releases
-  github-token: $GITHUB_TOKEN
-    file: 
+  token: $GITHUB_TOKEN
+  skip_cleanup: true
+  file:
   - ./gr/cv-gr.pdf
   - ./eng/cv-eng.pdf
-  skip_cleanup: true
   on:
     repo: ChrisKar96/CV-LaTeX

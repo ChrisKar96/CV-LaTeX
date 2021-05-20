@@ -264,10 +264,9 @@ TSWLatexianTemp*
 # standalone packages
 *.sta
 
-gr/CV-greek.pdf
+gr/*.pdf
+gr/*.cls
 
-gr/cv.pdf
+eng/*.pdf
+eng/*.cls
 
-eng/CV-english.pdf
-
-eng/cv.pdf
