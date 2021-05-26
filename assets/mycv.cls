@@ -1,6 +1,6 @@
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mycv}[2021/05/20 My custom CV class]
+\ProvidesClass{mycv}[2021/05/26 My custom CV class]
 \RequirePackage{titlesec}
 \RequirePackage[hidelinks,unicode]{hyperref}
 \RequirePackage[T1]{fontenc}
@@ -28,7 +28,7 @@
 
 %Section format
 \titleformat{\section}
-	{\Large\bf\scshape\raggedright}
+	{\Large\bf\raggedright}
 	{}{0em}
 	{}
 	[\titlerule]
@@ -38,7 +38,7 @@
 	{}{0em}
 	{}
 
-\newcommand{\datedentry}[4]{\subsection[#1]{\href{#2}{\textbf{#1}} \hfill \small{#3}\\\small\textsc{#4}}}
+\newcommand{\datedentry}[4]{\subsection[#1]{\href{#2}{\textbf{#1}} \hfill \small{#3}\\\small{#4}}}
 
 \newenvironment{EntryDatedLogo}[7]{
 	\begin{minipage}{0.1\textwidth}
@@ -69,7 +69,7 @@
 		\noindent\small{[#1] #2}
 	\end{minipage}%
 	\begin{minipage}{0.25\textwidth}
-		\hfill \textsc{#3}%
+		\hfill #3%
 	\end{minipage}\\\vspace{0.25cm}
 }
 
@@ -77,7 +77,7 @@
 \newcommand{\name}[3]{
 	\centering
 	{\Huge{\bf#1}}\\[0.2cm]
-	{\sc \small #2 {\Large\textperiodcentered} #3 }\\[1cm]
+	{\small #2 {\Large\textperiodcentered} #3 }\\[1cm]
 }
 
 \newcommand{\mobile}[1]{
