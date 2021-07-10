@@ -19,9 +19,12 @@ jobs:
         run: .github/workflows/generate_cv.sh cv-eng
       - name: Generate greek pdf
         run: .github/workflows/generate_cv.sh cv-gr
-      - name: Publishes CV
-        uses: ncipollo/release-action@v1.8.6
+      - name: Publish CVs
+        uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
-          artifacts: "cv-eng.pdf,cv-gr.pdf"
-          artifactContentType: "application/pdf"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: "latest"
+          prerelease: false
+          files: |
+            cv-eng.pdf
+            cv-gr.pdf
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
