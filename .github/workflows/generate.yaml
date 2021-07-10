@@ -8,6 +8,8 @@ on:
 jobs:
   generate-cv:
     runs-on: ubuntu-latest
+    container: 
+      image: ghcr.io/chriskar96/ubuntu-latex-docker-image:main
     steps:
       - name: Checkout
         uses: actions/checkout@v2
