@@ -1,0 +1,27 @@
+name: "Generate CV"
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  generate-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install packages
+        run: sudo apt-get -qq update && sudo apt-get install --no-install-recommends -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-fonts-extra-links texlive-font-utils texlive-plain-generic texlive-xetex texlive-lang-greek lmodern ghostscript
+      - name: Generate english pdf
+        run: .github/workflows/generate_cv.sh cv-eng
+      - name: Generate greek pdf
+        run: .github/workflows/generate_cv.sh cv-gr
+      - name: Publishes CV
+        uses: ncipollo/release-action@v1.8.6
+        with:
+          artifacts: "cv-eng.pdf,cv-gr.pdf"
+          artifactContentType: "application/pdf"
+          token: ${{ secrets.GITHUB_TOKEN }}

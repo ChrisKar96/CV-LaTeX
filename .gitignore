@@ -263,10 +263,3 @@ TSWLatexianTemp*
 
 # standalone packages
 *.sta
-
-gr/*.pdf
-gr/*.cls
-
-eng/*.pdf
-eng/*.cls
-

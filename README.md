@@ -1,2 +1,2 @@
 My CV LaTeX source code
-[![Build Status](https://travis-ci.com/ChrisKar96/CV-LaTeX.svg?token=bWMdRQWt5zsuxUxHjhRZ&branch=master)](https://travis-ci.com/ChrisKar96/CV-LaTeX)
+[![.github/workflows/generate.yaml](https://github.com/ChrisKar96/CV-LaTeX/actions/workflows/generate.yaml/badge.svg)](https://github.com/ChrisKar96/CV-LaTeX/actions/workflows/generate.yaml)
