@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install packages
-        run: sudo apt-get -qq update && sudo apt-get install --no-install-recommends -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-fonts-extra-links texlive-font-utils texlive-plain-generic texlive-xetex texlive-lang-greek lmodern ghostscript
+        run: apt-get -qq update && apt-get install --no-install-recommends -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-fonts-extra-links texlive-font-utils texlive-plain-generic texlive-xetex texlive-lang-greek lmodern ghostscript
       - name: Generate english pdf
         run: .github/workflows/generate_cv.sh cv-eng
       - name: Generate greek pdf
