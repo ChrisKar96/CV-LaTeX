@@ -36,7 +36,7 @@
 	\begin{minipage}{0.1\textwidth}
 	\vspace{#5}\includegraphics[width=#7\textwidth]{#6}
 	\end{minipage}%\hspace*{0.25cm}%
-	\begin{minipage}{0.9\textwidth}
+	\begin{minipage}{0.89\textwidth}
 		\datedentry{#1}{#2}{#3}{#4}
 }{		
 	\end{minipage}
