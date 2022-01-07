@@ -8,7 +8,7 @@
 \RequirePackage{lmodern}
 \RequirePackage{marginnote}
 \RequirePackage{graphicx}
-\RequirePackage[width=18.00cm, height=25.00cm]{geometry}
+\usepackage[a4paper,left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
 \RequirePackage{multicol}
 \RequirePackage{blindtext}
 \setlength{\parindent}{0pt}
@@ -85,7 +85,7 @@
 }
 
 \newcommand{\homepage}[1]{
-\faHome\ \href{#1}{#1}
+\faHome\ \href{https://#1}{#1}
 }
 
 \newcommand{\linkedin}[1]{
