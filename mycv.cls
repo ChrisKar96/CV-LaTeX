@@ -73,7 +73,7 @@
 }
 
 \newcommand{\mobile}[1]{
-\faMobile*\ #1
+\faMobile*\ \href{tel:#1}{#1}
 }
 
 \newcommand{\email}[1]{
