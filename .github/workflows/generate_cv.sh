@@ -16,7 +16,7 @@ xelatex "$1"
 mv "$1".pdf "$1"-unopt.pdf
 
 # optimize pdf and final output
-gs -sDEVICE=pdfwrite -dSAFER -dPDFSETTINGS=/ebook -dColorImageResolution=260 -dPrinted=false -dNOPAUSE -dBATCH -dFastWebView=true -sOutputFile="$1".pdf "$1"-unopt.pdf
+gs -sDEVICE=pdfwrite -dSAFER -dPDFSETTINGS=/ebook -dColorImageResolution=260 -dPrinted=false -dNOPAUSE -dBATCH -dFastWebView=true -sOutputFile=christos-karamolegkos-"$1".pdf "$1"-unopt.pdf
 
 # exit successfully if optimized pdf is present or with error if not present
 [ -f "$1".pdf ] && exit 0 || exit 1

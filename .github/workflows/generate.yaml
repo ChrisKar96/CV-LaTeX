@@ -27,6 +27,6 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           files: |
-            cv-eng.pdf
-            cv-gr.pdf
+            christos-karamolegkos-cv-eng.pdf
+            christos-karamolegkos-cv-gr.pdf
           repo_token: ${{ secrets.GITHUB_TOKEN }}
