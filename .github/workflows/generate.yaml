@@ -18,9 +18,9 @@ jobs:
       - name: Install packages
         run: apt-get -qq update && apt-get install --no-install-recommends -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-fonts-extra-links texlive-font-utils texlive-plain-generic texlive-xetex texlive-lang-greek lmodern ghostscript
       - name: Generate english pdf
-        run: .github/workflows/generate_cv.sh cv-eng
+        run: .github/workflows/generate_cv.sh christos-karamolegkos-cv-eng
       - name: Generate greek pdf
-        run: .github/workflows/generate_cv.sh cv-gr
+        run: .github/workflows/generate_cv.sh christos-karamolegkos-cv-gr
       - name: Publish CVs
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
