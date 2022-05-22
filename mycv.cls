@@ -38,7 +38,7 @@
 	\end{minipage}%\hspace*{0.25cm}%
 	\begin{minipage}{0.89\textwidth}
 		\datedentry{#1}{#2}{#3}{#4}
-}{		
+}{
 	\end{minipage}
 }
 
@@ -48,14 +48,14 @@
 	\end{minipage}%\hspace*{0.25cm}%
 	\begin{minipage}{0.7\textwidth}
 		\datedentry{#1}{#2}{#3}{#4}
-	}{		
+	}{
 	\end{minipage}
 }
 
 \newenvironment{EntryDated}[5]{
 	\datedentry{#1}{#2}{#3}{#4}
 }
-		
+
 \newcommand{\pubentry}[3]{% number, cite, status
 	\begin{minipage}{0.75\textwidth}
 		\noindent\small{[#1] #2}
