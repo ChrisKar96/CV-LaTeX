@@ -69,7 +69,7 @@
 \newcommand{\name}[3]{
 	\centering
 	{\Huge{\bf#1}}\\[0.2cm]
-	{\small #2 {\Large\textperiodcentered} #3 }\\[0.7cm]
+	{\small #2 {\Large\textperiodcentered} #3 }\\[0.5cm]
 }
 
 \newcommand{\mobile}[1]{
@@ -99,10 +99,10 @@
 \newcommand{\contact}[6]{
     \mobile{#1} {\Large\textperiodcentered} %
 	\email{#2} {\Large\textperiodcentered} %
-	\telegram{#3}\\[0.25cm]
+	\telegram{#3}\\[0.2cm]
 	\homepage{#4} {\Large\textperiodcentered} %
 	\linkedin{#5} {\Large\textperiodcentered} %
-	\github{#6}\\[0.4cm]
+	\github{#6}\\[0.3cm]
 }
 
 % XeLaTeX packages.
