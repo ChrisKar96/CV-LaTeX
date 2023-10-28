@@ -69,7 +69,7 @@
 \newcommand{\name}[3]{
 	\centering
 	{\Huge{\bf#1}}\\[0.2cm]
-	{\small #2 {\Large\textperiodcentered} #3 }\\[1cm]
+	{\small #2 {\Large\textperiodcentered} #3 }\\[0.7cm]
 }
 
 \newcommand{\mobile}[1]{
@@ -102,7 +102,7 @@
 	\telegram{#3}\\[0.25cm]
 	\homepage{#4} {\Large\textperiodcentered} %
 	\linkedin{#5} {\Large\textperiodcentered} %
-	\github{#6}\\[0.5cm]
+	\github{#6}\\[0.4cm]
 }
 
 % XeLaTeX packages.
