@@ -1,6 +1,6 @@
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mycv}[2023/11/07 My custom CV class]
+\ProvidesClass{mycv}[2024/02/02 My custom CV class]
 \RequirePackage{titlesec}
 \RequirePackage[hidelinks,unicode]{hyperref}
 \RequirePackage[T1]{fontenc}
@@ -8,7 +8,7 @@
 \RequirePackage{lmodern}
 \RequirePackage{marginnote}
 \RequirePackage{graphicx}
-\usepackage[a4paper,left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage[a4paper,left=1.2cm,right=1.2cm,top=1.2cm,bottom=1.2cm]{geometry}
 \RequirePackage{multicol}
 \RequirePackage{blindtext}
 \setlength{\parindent}{0pt}
