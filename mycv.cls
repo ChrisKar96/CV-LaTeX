@@ -8,7 +8,7 @@
 \RequirePackage{lmodern}
 \RequirePackage{marginnote}
 \RequirePackage{graphicx}
-\usepackage[a4paper,left=1.2cm,right=1.2cm,top=1.2cm,bottom=1.2cm]{geometry}
+\usepackage[a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
 \RequirePackage{multicol}
 \RequirePackage{blindtext}
 \setlength{\parindent}{0pt}
@@ -91,7 +91,7 @@
 }
 
 \newcommand{\linkedin}[1]{
-\faLinkedin\ \href{https://www.linkedin.com/in/#1}{#1}
+\faLinkedin\ \href{https://www.linkedin.com/#1}{#1}
 }
 
 \newcommand{\github}[1]{
