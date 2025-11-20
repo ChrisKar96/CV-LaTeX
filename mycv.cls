@@ -1,4 +1,4 @@
-\LoadClass{article}
+\LoadClass[a4paper,8pt]{extarticle}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mycv}[2024/02/02 My custom CV class]
 \RequirePackage{titlesec}
