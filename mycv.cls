@@ -33,10 +33,10 @@
 \newcommand{\datedentry}[4]{\subsection[#1]{\href{#2}{\textbf{#1}} \hfill \small{#3}\\\small{#4}}}
 
 \newenvironment{EntryDatedLogo}[6]{
-	\begin{minipage}{0.1\textwidth}
+	\begin{minipage}{0.05\textwidth}
 		\vspace{-0.3cm}\includegraphics[width=#6\textwidth]{#5}
 	\end{minipage}
-	\begin{minipage}{0.89\textwidth}
+	\begin{minipage}{0.94\textwidth}
 		\datedentry{#1}{#2}{#3}{#4}
 		\vspace{-0.2cm}
 		}{
